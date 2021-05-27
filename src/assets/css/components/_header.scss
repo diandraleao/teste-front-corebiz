@@ -1,0 +1,57 @@
+header {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    background-color: $white;
+    padding: 7px 20px 11px;
+    a {
+        color: $gray-medium;
+        text-decoration: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .account {
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: inline-block;
+        }
+    }
+
+    .search {
+        &__box {
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1px solid $black;
+            padding: 9px;
+            border-radius: 0;
+        }
+
+        &__button {
+            border: none;
+            background-color: transparent;
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            right: 5%;
+        }
+    }
+
+    .menu {
+        margin-top: auto;
+    }
+
+    .shop{
+        margin-top: auto;
+        &__counter {
+            background-color: $pink;
+            color: $white;
+            border-radius: 50%;
+            padding: 1px 4px;
+        }
+    }
+
+}
