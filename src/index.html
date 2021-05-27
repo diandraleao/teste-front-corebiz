@@ -15,35 +15,36 @@
         <strong>We're sorry but teste-front-corebiz doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <header>
-        <div class="menu">
-            <a href="#">
-                <img src="./assets/img/menu.svg" alt="">
-            </a>
-        </div>
-        <div class="logo">
-            <img src="./assets/img/logo_corebiz.png" alt="">
+        <div class="header">
+            <div class="menu">
+                <a href="#">
+                    <img src="./assets/img/menu.svg" alt="Icone de menu">
+                </a>
+            </div>
+            <div class="logo">
+                <img src="./assets/img/logo_corebiz.png" alt="Logo Corebiz">
+            </div>
+            <div class="account">
+                <a href="#">Minha Conta</a>
+            </div>
+            <div class="shop">
+                <a href="#"><img src="./assets/img/carrinho.svg" alt="Carrinho de compras"> <span class="shop__counter">0</span> </a>
+            </div>
         </div>
         <div class="search">
             <form>
-                <input type="text" placeholder="O que está procurando?">
-                <button type="submit">Pesquisar</button>
+                <input type="text" class="search__box" placeholder="O que está procurando?">
+                <button type="submit" class="search__button"><img src="./assets/img/pesquisa.png" alt="Lupa de busca"></button>
             </form>
-        </div>
-        <div class="account">
-            <a href="#">Minha Conta</a>
-        </div>
-        <div class="shop">
-            <a href="#">Carrinho <span class="shop--counter"></span> </a>
         </div>
     </header>
 
     <main>
         <div class="banner">
-            <ul>
-                <li>
+            <ul class="banner__list">
+                <li class="banner__list__item">
                     <h2>Olá, o que você está buscando?</h2>
                     <h3>Criar ou migrar seu e-commerce?</h3>
-                    <img src="" alt="">
                 </li>
             </ul>
         </div>
@@ -61,13 +62,20 @@
         <!-- NEWS -->
         <section class="news">
             <div class="container">
-                <h3>Participe de nossas news com promoções e novidades!</h3>
-                <form action="#" class="news__form">
-                    <input type="text" placeholder="Digite seu nome">
-                    <input type="email" placeholder="Digite seu email">
+                <div class="news__send">
+                    <h3>Participe de nossas news com promoções e novidades!</h3>
+                    <form action="#" class="news__send__form">
+                        <input type="text" class="news__send__input" placeholder="Digite seu nome">
+                        <input type="email" class="news__send__input" placeholder="Digite seu email">
 
-                    <button type="submit">Eu quero!</button>
-                </form>
+                        <button type="submit" class="news__send__btn btn btn__negative">Eu quero!</button>
+                    </form>
+                </div>
+                <div class="news__sent">
+                    <p class="news__sent__title">Seu e-mail foi cadastrado com sucesso!</p>
+                    <p class="news__sent__description">A partir de agora você receberá as novidade e ofertas exclusivas.</p>
+                    <button class="news__sent__btn btn btn__negative">Cadastrar novo e-mail</button>
+                </div>
             </div>
         </section>
         <!-- /NEWS -->
@@ -83,15 +91,24 @@
                 <p>+55 11 3090 1039</p>
             </div>
             <div class="contact">
-                <button>
+                <button class="btn btn__default">
+                    <img src="./assets/img/contato.svg" alt="">
                     ENTRE EM CONTATO
                 </button>
-                <button>
+                <button class="btn btn__default">
+                    <img src="./assets/img/fone.svg" alt="">
                     FALE COM O NOSSO CONSULTOR ONLINE
                 </button>
             </div>
             <div class="signature">
-
+                <div class="created">
+                    <p>Created by</p>
+                    <img src="./assets/img/logo_corebiz_negativo.svg" alt="">
+                </div>
+                <div class="powered">
+                    <p>Powered by</p>
+                    <img src="./assets/img/logo_vtex.svg" alt="">
+                </div>
             </div>
         </div>
     </footer>
