@@ -1,0 +1,40 @@
+
+.products {
+    padding-top: 16px;
+    padding-bottom: 40px;
+    &__carousel {
+        .card {
+            &__title {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 16px;
+                color: #7A7A7A;
+                text-align: center
+            }
+
+            &__price {
+                font-size: 12px;
+                line-height: 16px;
+                min-height: 16px;
+                text-align: center;
+                color: #7A7A7A;
+            }
+            
+            &__bestprice {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 25px;
+                text-align: center;
+                color: $black;
+            }
+
+            &__installment {
+                font-size: 11px;
+                line-height: 15px;
+                text-align: center;
+                color: #7A7A7A;
+            }
+        }
+    }
+}
+

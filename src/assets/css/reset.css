@@ -22,7 +22,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	vertical-align: baseline;
 	box-sizing: border-box;
-	font-family: Roboto, 'Helvetica Neue', Arial;
+	font-family: 'Nunito', 'Helvetica Neue', Arial;
+	font-style: normal;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 

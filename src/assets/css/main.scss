@@ -1,26 +1,9 @@
 @import "../../../node_modules/tiny-slider/dist/tiny-slider.css";
 @import "_variables.scss";
+@import "components/main.scss";
 
 /* SASS */
-header {
-    display: flex;
-    /*justify-content: center;*/
-    background-color: $white;
-    a {
-        color: $gray-medium;
-    }
 
-}
-
-footer {
-    background-color: $black;
-    color: $white;
-}
-
-.news {
-    background-color: $gray-light;
-    color: $gray-dark;
-}
 
 
 /*
@@ -97,3 +80,33 @@ footer {
  * Product Card
  */
 
+
+ input {
+     padding: 17px 16px;
+     border-radius: 5px;
+     background-color: $white;
+ }
+
+ button {
+    &.btn {
+        border-radius: 5px;
+        padding: 12px;
+        &__default {
+            background-color: $white;
+            color: $black;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        &__negative {
+            background-color: $black;
+            color: $white;
+            border: none;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
+
+ }
