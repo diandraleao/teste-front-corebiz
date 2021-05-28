@@ -20,11 +20,11 @@ if (document.body.classList.contains('home-page')) {
    * cards
    */
   cards.buildCards();
-  cards.bind();
 
   /**
    * slider
    */
   slider.buildSliderMaisVendidos();
+  
 
 }

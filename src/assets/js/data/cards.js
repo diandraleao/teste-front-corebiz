@@ -1,31 +1,9 @@
 'use strict';
 
-
-let endPoint = 'https://corebiz-test.herokuapp.com/api/v1/products';
-let request = new XMLHttpRequest();
-
-let data = [];
-
-request.open('GET', endPoint);
-
-request.send();
-
-request.onerror = function(e) {
-    console.log('error');
-}
-
-request.onload = () => {
-    let response = (request.responseText);
-    console.log(response);
-    return response;
-}
-
-
-
-
-export default {
-    getData: () => {
-
-        return data.default
-    }
-}
+export default function fetchUrl(endpoint) {
+    return fetch(endpoint)
+      .then((response) => response.json())
+      .then((data) => data)
+      .catch((error) => console.error("error", error));
+  }
+  
