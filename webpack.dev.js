@@ -52,13 +52,6 @@ module.exports = merge(common, {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './src/index.html',
-            favicon: './src/assets/img/favicon.ico',
-            inject: 'body'
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'vantagens.html',
-            template: './src/vantagens.html',
-            favicon: './src/assets/img/favicon.ico',
             inject: 'body'
         })
     ]
