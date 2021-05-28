@@ -8,6 +8,33 @@
             background-size: 100%;
             height: 191px;
             color: $white;
+            
+            @media screen and (min-width: $desktop-width-min) {
+                background-image: url(/assets/img/banner-desk.png);
+                height: 430px;
+                background-size: cover; 
+            }
+
+            &__title {
+                font-size: 20px;
+                line-height: 1;
+                padding: 30px 20px;
+                
+                @media screen and (min-width: $desktop-width-min) {
+                    width: 50%;
+                    padding-top: 154px;
+                    font-size: 30px;
+                    line-height: 41px;
+                }
+                &__sub {
+                    font-size: 30px;
+                    line-height: 1;
+                    @media screen and (min-width: $desktop-width-min) {
+                        font-size: 45px;
+                        line-height: 45px;
+                    }
+                }
+            }
         }
     }
 }

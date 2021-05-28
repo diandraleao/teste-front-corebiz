@@ -3,13 +3,60 @@ footer {
     color: $white;
     padding-top: 27px;
     padding-bottom: 15px; 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex: 1;
+
+    .footer {
+        padding-top: 27px;
+        padding-bottom: 10px; 
+        @media screen and (min-width: $desktop-width-min) {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+        } 
+        
+        &__location {
+            &__title {
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 27px;
+                margin-bottom: 16px;
+            }
+
+            &__separator {
+                width: 44px;
+                height: 5px;
+                border: none;
+                background-color: $white;
+                display: inline-block;
+                margin-bottom: 20px;
+            }
+
+            &__description {
+                font-size: 13px;
+                line-height: 12px;
+                margin-bottom: 12px;
+            }
+        }
+            
+        &__contact {
+            text-align: center;
+            @media screen and (min-width: $desktop-width-min) {
+                flex-direction: column;
+                display: flex;
+            }
+
+            .btn {
+                width: 195px;
+                margin-top: 25px;
+                
+            }
+        }
+
+        &__signature {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 25px;
+        }
     }
 
-    .signature {
-        display: flex;
-        justify-content: space-around;
-    }
+
 }

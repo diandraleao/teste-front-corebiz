@@ -15,8 +15,9 @@ header {
 
     .account {
         display: none;
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $desktop-width-min) {
             display: inline-block;
+            margin-top: auto;
         }
     }
 
@@ -37,12 +38,13 @@ header {
             height: 30px;
             width: 30px;
             right: 5%;
+            cursor: pointer;
         }
     }
 
     .menu {
         margin-top: auto;
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $desktop-width-min) {
             display: none;
         }
     }

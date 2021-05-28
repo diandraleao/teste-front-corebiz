@@ -2,18 +2,35 @@
     background-color: $gray-light;
     color: $gray-dark;
     padding-top: 24px;
-    padding-bottom: 16px; 
+    padding-bottom: 16px;
+    text-align: center;
+    
+    &__send {
+        
+        &__title {
+            margin-bottom: 16px;
+        }
 
-    input {
-        width: 100%;
-        margin-top: 20px;
-	    box-sizing: border-box;
+        &__input {
+            width: 100%;
+            margin-top: 20px;
+            box-sizing: border-box;
+            @media screen and (min-width: $desktop-width-min) {
+                width: 280px;
+                margin-top: 0px;
+            }
+        }
+
+        &__btn {
+            width: 100%;
+            margin-top: 7px;
+            height: 48px;
+            @media screen and (min-width: $desktop-width-min) {
+                width: 140px;
+            }
+        }
     }
 
-    button {
-        width: 100%;
-        margin-top: 7px;
-    }
 
     &__sent {
         display: none;

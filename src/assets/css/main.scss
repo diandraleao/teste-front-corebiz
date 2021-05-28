@@ -85,12 +85,14 @@
      padding: 17px 16px;
      border-radius: 5px;
      background-color: $white;
+     border: none;
  }
 
  button {
     &.btn {
         border-radius: 5px;
         padding: 12px;
+        border: none;
         &__default {
             background-color: $white;
             color: $black;
@@ -109,4 +111,12 @@
         }
     }
 
+ }
+
+ .hidden {
+     visibility: hidden;
+ }
+
+ .visible {
+     visibility: visible;
  }
