@@ -11,7 +11,6 @@ import scss from '../css/main.scss';
  * Components
  */
 import cards from './components/cards.js';
-import slider from './components/slider.js';
 
 
 if (document.body.classList.contains('home-page')) {
@@ -20,12 +19,6 @@ if (document.body.classList.contains('home-page')) {
    * cards
    */
   cards.buildCards();
-  cards.addToCard();
-  
-  /**
-   * slider
-   */
-  slider.buildSliderMaisVendidos();
   
 
 }
