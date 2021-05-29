@@ -49,17 +49,35 @@ header {
         }
     }
 
+    .logo {
+        img {
+            height: 25px;
+        }
+    }
+
     .shop{
         margin-top: auto;
-        &__counter {
-            background-color: $pink;
-            color: $white;
-            border-radius: 50%;
-            padding: 1px 4px;
-            font-weight: bold;
-            font-size: 10px;
-            line-height: 14px;
+
+        &__link {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+            &__icon {
+                margin-right: 5px;
+            }
+            
+            &__counter {
+                background-color: $pink;
+                color: $white;
+                border-radius: 50%;
+                padding: 1px 4px;
+                font-weight: bold;
+                font-size: 10px;
+                line-height: 14px;
+            }
         }
+        
     }
 
 }
