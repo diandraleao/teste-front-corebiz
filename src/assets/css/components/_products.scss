@@ -21,6 +21,7 @@
         .card {
             width: 216px;
             position: relative;
+            text-align: center;
 
             &:hover {
                 background-color: #E6E8EA; 
@@ -50,8 +51,8 @@
                     font-size: 16px;
                     font-weight: 900;
                     color: $white;
-                    top: 15px;
                     position: relative;
+                    top: 15px;
                     width: 93px;
                     height: 93px;
                     right: -40px;
@@ -94,6 +95,7 @@
 
             &__button {
                 cursor: pointer;
+                width: 125px;
                 //visibility: hidden;
             }
         }
