@@ -1,5 +1,4 @@
 'use strict';
-// import { tns } from "../../../../node_modules/@splidejs/splide/dist/";
 import Splide from '@splidejs/splide'
 
 import fetchUrl from '../data/cards';
