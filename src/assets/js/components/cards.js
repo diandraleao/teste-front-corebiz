@@ -18,6 +18,10 @@ let template = `<li class="card card-{{id}} splide__slide">
 export default {
 
     buildCards: () => {
+
+        if ( localStorage.getItem('cartQtd') ) {
+            document.querySelector('.shop__link__counter').innerHTML = localStorage.getItem('cartQtd');
+        }
        
         const fetchData = async () => {
             const data = await fetchUrl(endpoint);
@@ -57,7 +61,9 @@ export default {
             let counter = parseInt(document.querySelector('.shop__link__counter').innerHTML, 10);
             
             $buttons.forEach($button => $button.addEventListener('click', () => {
-                document.querySelector('.shop__link__counter').innerHTML = counter++;
+                counter = counter + 1;
+                document.querySelector('.shop__link__counter').innerHTML = counter;
+                localStorage.setItem('cartQtd', counter)
             }));
         };
 
