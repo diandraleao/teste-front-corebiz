@@ -17,7 +17,11 @@
         display: inline-block;
     }
 
-    &__carousel {
+    .splide {
+        &__pagination {
+            display: none;
+        }
+        
         .card {
             width: 216px;
             position: relative;
@@ -25,7 +29,7 @@
 
             &:hover {
                 background-color: #E6E8EA; 
-                &__buton {
+                > .card__button {
                     visibility: visible;
                 }
             }
@@ -97,6 +101,7 @@
                 cursor: pointer;
                 width: 125px;
                 //visibility: hidden;
+                margin-bottom: 14px;
             }
         }
     }
