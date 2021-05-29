@@ -20,11 +20,41 @@
     &__carousel {
         .card {
             width: 216px;
+            position: relative;
 
             &:hover {
                 background-color: #E6E8EA; 
                 &__buton {
                     visibility: visible;
+                }
+            }
+
+            &__offer {
+                width: 0;
+                height: 0;
+                border: 0 solid transparent;
+                border-top-width: 0px;
+                border-right-color: transparent;
+                border-right-style: solid;
+                border-right-width: 0px;
+                border-bottom-width: 0px;
+                border-top-width: 0;
+                border-bottom-width: 80px;
+                border-right: 80px solid $pink;
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 9999;
+
+                &__text {
+                    font-size: 16px;
+                    font-weight: 900;
+                    color: $white;
+                    top: 15px;
+                    position: relative;
+                    width: 93px;
+                    height: 93px;
+                    right: -40px;
                 }
             }
 

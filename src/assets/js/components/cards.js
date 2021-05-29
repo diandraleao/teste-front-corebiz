@@ -6,6 +6,7 @@ import fetchUrl from '../data/cards';
 const endpoint = "https://corebiz-test.herokuapp.com/api/v1/products";
 
 let template = `<div class="card card-{{id}}">
+                    <div class="card__offer {{offerstyle}}"><span class="card__offer__text">OFF</span></div>
                     <img src="{{imageUrl}}" alt="{{title}}" class="card__image">
                     <p class="card__title">{{title}}</p>
                     <p class="card__price {{pricestyle}}" style="">de R$ {{price}}</p>
@@ -29,6 +30,7 @@ export default {
                 let card = template
 
                 return card.replace(/{{id}}/gi, produto.productId)
+                            .replace(/{{offerstyle}}/gi, !produto.listPrice ? 'hidden' : 'visible')
                             .replace(/{{imageUrl}}/gi, produto.imageUrl)
                             .replace(/{{title}}/gi, produto.productName)
                             .replace(/{{pricestyle}}/gi, !produto.listPrice ? 'hidden' : 'visible')
