@@ -60,5 +60,15 @@ export default {
             controlsText: ['<', '>']
         });
     
+    },
+
+    addToCard: () => {
+        
+        let $buttons = document.querySelectorAll('.card__button');
+        let counter = parseInt(document.querySelector('.shop__link__counter').innerHTML, 10);
+        
+        $buttons.forEach($button => $button.addEventListener('click', () => {
+            document.querySelector('.shop__link__counter').innerHTML = counter++;
+        }));
     }
 }
