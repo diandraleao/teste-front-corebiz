@@ -19,17 +19,21 @@ export default {
 
     buildCards: () => {
 
+        // recupera localStorage de itens do carrinho
         if ( localStorage.getItem('cartQtd') ) {
             document.querySelector('.shop__link__counter').innerHTML = localStorage.getItem('cartQtd');
         }
        
+        // traz os itens dos cards e preenche no template
         const fetchData = async () => {
+
+            // async/await pois retorna uma promise
             const data = await fetchUrl(endpoint);
             let prods = document.querySelector('.splide__list');
 
             prods.innerHTML = '';
 
-        
+            // preenchendo cards no template
             prods.innerHTML = data.map((produto) => {
                 let card = template
 
@@ -46,10 +50,11 @@ export default {
 
             });
 
-
+            // carrossel mobile
             if (window.innerWidth < 1024) {
                 new Splide( '#splide' ).mount();
              }
+             // carrossel desktop
              else {
                 new Splide( '#splide', {
                     perPage: 4,
@@ -57,6 +62,7 @@ export default {
                 } ).mount();
              }
 
+            // fazendo clique do botao comprar para acrescentar um item no carrinho
             let $buttons = document.querySelectorAll('.card__button');
             let counter = parseInt(document.querySelector('.shop__link__counter').innerHTML, 10);
             
@@ -71,15 +77,5 @@ export default {
         fetchData();
 
 
-    },
-
-    addToCard: () => {
-        
-        let buttons = document.querySelectorAll('.card__button');
-        let counter = parseInt(document.querySelector('.shop__link__counter').innerHTML, 10);
-        
-        buttons.forEach(button => button.addEventListener('click', () => {
-            document.querySelector('.shop__link__counter').innerHTML = counter++;
-        }));
     }
 }
