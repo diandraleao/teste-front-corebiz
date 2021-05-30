@@ -18,8 +18,28 @@
     }
 
     .splide {
+
         &__pagination {
+            bottom: -20px;
+            @media screen and (min-width: $desktop-width-min) {
+                display: none;
+            }
+
+            &__page {
+                &.is-active {
+                    background-color: $pink;
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+        }
+
+        &__arrow {
             display: none;
+            @media screen and (min-width: $desktop-width-min) {
+                display: block;
+                background-color: transparent;
+            }
         }
         
         .card {
@@ -101,7 +121,7 @@
             &__button {
                 cursor: pointer;
                 width: 125px;
-                //visibility: hidden;
+                visibility: hidden;
                 margin-bottom: 14px;
             }
         }
