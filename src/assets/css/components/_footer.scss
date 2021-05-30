@@ -7,6 +7,7 @@ footer {
     .footer {
         padding-top: 27px;
         padding-bottom: 10px; 
+        
         @media screen and (min-width: $desktop-width-min) {
             display: flex;
             flex: 1;
@@ -39,6 +40,7 @@ footer {
             
         &__contact {
             text-align: center;
+
             @media screen and (min-width: $desktop-width-min) {
                 flex-direction: column;
                 display: flex;
@@ -47,7 +49,10 @@ footer {
             .btn {
                 width: 195px;
                 margin-top: 25px;
-                
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: space-around;
             }
         }
 
