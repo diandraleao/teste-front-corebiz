@@ -76,16 +76,20 @@
         <!-- NEWS -->
         <section class="news">
             <div class="container">
-                <div class="news__send">
+                <div class="news__send d-block">
                     <h3 class="news__send__title">Participe de nossas news com promoções e novidades!</h3>
-                    <form action="#" class="news__send__form">
-                        <input type="text" class="news__send__input" placeholder="Digite seu nome">
-                        <input type="email" class="news__send__input" placeholder="Digite seu email">
+                    <form class="news__send__form">
+                        <div class="news__send__form__group">
+                            <input type="text" class="news__send__form__group__input" id="name" placeholder="Digite seu nome">
+                        </div>
+                        <div class="news__send__form__group">
+                            <input type="email" class="news__send__form__group__input" id="email" placeholder="Digite seu email">
+                        </div>
 
-                        <button type="submit" class="news__send__btn btn btn__negative">Eu quero!</button>
+                        <button type="button" class="news__send__btn btn btn__negative">Eu quero!</button>
                     </form>
                 </div>
-                <div class="news__sent">
+                <div class="news__sent d-none">
                     <p class="news__sent__title">Seu e-mail foi cadastrado com sucesso!</p>
                     <p class="news__sent__description">A partir de agora você receberá as novidade e ofertas exclusivas.</p>
                     <button class="news__sent__btn btn btn__negative">Cadastrar novo e-mail</button>
