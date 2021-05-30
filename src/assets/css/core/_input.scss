@@ -4,4 +4,14 @@
     border-radius: 5px;
     background-color: $white;
     border: none;
+
+    &.error {
+        border: 1px solid $red-error;
+    }
+
+    &:focus,
+    &:focus-visible {
+        border: 1px solid #BDBDBD;
+        border-radius: 5px;
+    }
 }
